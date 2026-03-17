@@ -1,17 +1,15 @@
 import Image from "next/image";
+import HeaderIcon from "./HeaderIcon";
 import { 
-  FlagIcon,
   MagnifyingGlassIcon,
-  HomeIcon,
-  PlayIcon,
-  ShoppingCartIcon,
-  UserGroupIcon
+
  } from "@heroicons/react/24/outline";  
+ import { HomeIcon,FlagIcon, PlayIcon, ShoppingCartIcon, UserGroupIcon } from "@heroicons/react/24/solid";
 
  
 function Header() {
   return (
-    <div>
+    <div className="sticky top-0 z-50 bg-white flex items-center p-2 lg:px-5 shadow-md">
         {/* left */}
         <div className="flex items-center gap-2">
           <Image 
@@ -24,13 +22,13 @@ function Header() {
 
         <div className="flex ml-2 items-center rounded-full bg-gray-100">
           <MagnifyingGlassIcon className="h-6 text-gray-600" />
-          <input className="flex ml-2 items-center bg-transparent outline-none placeholder:text-gray-500" type="text" placeholder="Search Facebook" />
-          </div>  
-
+          <input className="flex ml-2 items-center bg-transparent outline-none placeholder:text-gray-500 flex-shrink-0" type="text" placeholder="Search Facebook" />
+          </div> 
+        </div> 
 
         {/* center */}
         <div className="flex justify-center flex-grow">
-          <div>
+          <div className="flex space-x-6 md:space-x-2">
             <HeaderIcon active Icon={HomeIcon} />
             <HeaderIcon Icon={FlagIcon} />
             <HeaderIcon Icon={PlayIcon} />
@@ -38,10 +36,8 @@ function Header() {
             <HeaderIcon Icon={UserGroupIcon} />
           </div>
         </div>
-        {/* Right - Icons */}
-        </div>
-      
-   </div>)
+    </div>
+  )
 }
 
 export default Header
