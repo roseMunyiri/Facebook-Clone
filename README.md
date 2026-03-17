@@ -1,4 +1,4 @@
-## Facebook Clone – Frontend Practice
+## Facebook Clone 
 
 This project is a frontend practice application inspired by Facebook. It is built using **Next.js**, **TypeScript**, **Tailwind CSS**, and **CSS** to practice modern frontend development.
 
