@@ -1,17 +1,15 @@
 import Image from "next/image";
 import HeaderIcon from "./HeaderIcon";
 import { 
-  BellIcon,
-
+  HomeIcon,
+  FlagIcon, 
+  PlayCircleIcon,
+  ShoppingCartIcon,
+  UserGroupIcon,
   MagnifyingGlassIcon,
  } from "@heroicons/react/24/outline";  
 
  import {
-  HomeIcon,
-  FlagIcon,
-  PlayIcon,
-  ShoppingCartIcon,
-  UserGroupIcon,
   BellIcon as BellIconSolid,
   ChatBubbleOvalLeftEllipsisIcon,
   ChevronDownIcon,
@@ -42,7 +40,7 @@ function Header() {
           <div className="flex space-x-6 md:space-x-2">
             <HeaderIcon active Icon={HomeIcon} />
             <HeaderIcon Icon={FlagIcon} />
-            <HeaderIcon Icon={PlayIcon} />
+            <HeaderIcon Icon={PlayCircleIcon} />
             <HeaderIcon Icon={ShoppingCartIcon} />
             <HeaderIcon Icon={UserGroupIcon} />
           </div>
